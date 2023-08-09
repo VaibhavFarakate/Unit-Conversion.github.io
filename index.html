@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-secondary bg-gradient">
+    <div class="container">
+        <div class="row mainDiv">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="card shadow-lg px-5">
+                    <h3 class="text-center mt-2 text-success border-bottom border-dark pb-2">Length Converter</h3>
+                    <div class="row my-3">
+                        <div class="col-4  my-auto">
+                            <label for="cm" class="form-label">Centimeters</label>
+                        </div>
+                        <div class="col-8 ">
+                            <input type="number" class="form-control" id="cm"
+                                oninput="convertToOthers('cm',this.value)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4  my-auto ">
+                            <label for="meter" class="form-label">Meters</label>
+                        </div>
+                        <div class="col-8 ">
+                            <input type="number" class="form-control" id="meter"
+                                oninput="convertToOthers('meter',this.value)">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-4 my-auto ">
+                            <label for="inch" class="form-label">Inches</label>
+                        </div>
+                        <div class="col-8 ">
+                            <input type="number" class="form-control" id="inch"
+                                oninput="convertToOthers('inch',this.value)">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-4  my-auto ">
+                            <label for="feet" class="form-label">Feet</label>
+                        </div>
+                        <div class="col-8 ">
+                            <input type="number" class="form-control" id="feet"
+                                oninput="convertToOthers('feet',this.value)">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-4  my-auto ">
+                            <label for="yard" class="form-label">Yards</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="number" class="form-control" id="yard"
+                                oninput="convertToOthers('yard',this.value)">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-4 my-auto ">
+                            <label for="km" class="form-label">Kilometers</label>
+                        </div>
+                        <div class="col-8 ">
+                            <input type="number" class="form-control" id="km"
+                                oninput="convertToOthers('km',this.value)">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-4  my-auto ">
+                            <label for="mile" class="form-label">Miles</label>
+                        </div>
+                        <div class="col-8 ">
+                            <input type="number" class="form-control" id="mile"
+                                oninput="convertToOthers('mile',this.value)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
